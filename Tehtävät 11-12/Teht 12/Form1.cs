@@ -25,10 +25,12 @@ namespace Teht_12
         {
             if(sender is RadioButton && laskuri < 10)
             {
+                tyhjaaVastaus();
                 RadioButton radioButton = (RadioButton)sender;
                 vastaukset[laskuri] = radioButton.Text;
                 laskuri++;
                 kysymysLB.Text = "Vastaus " + laskuri + ". kysymykseen:";
+                
             }
             else
             {
@@ -47,7 +49,7 @@ namespace Teht_12
                 VastausLB.Text = "Oikeita vastauksia oli: " + oikein;
                 VastausLB.Visible = true;
             }
-            tyhjaaVastaus(); 
+            
         }
         private void tyhjaaVastaus()
         {
