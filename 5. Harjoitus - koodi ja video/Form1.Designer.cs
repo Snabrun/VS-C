@@ -49,6 +49,7 @@
             this.uusiLukuTB.Name = "uusiLukuTB";
             this.uusiLukuTB.Size = new System.Drawing.Size(100, 23);
             this.uusiLukuTB.TabIndex = 1;
+            this.uusiLukuTB.Text = "0";
             this.uusiLukuTB.TextChanged += new System.EventHandler(this.uusiLukuTB_TextChanged);
             this.uusiLukuTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.uusiLukuTB_KeyPress);
             // 

@@ -2,7 +2,7 @@ namespace _5._Harjoitus___koodi_ja_video
 {
     public partial class Form1 : Form
     {
-        
+        List<int> jono = new List<int>();
         public Form1()
         {
             InitializeComponent();
@@ -16,7 +16,7 @@ namespace _5._Harjoitus___koodi_ja_video
         {
 
         }
-        List<int> jono = new List<int>();
+        
         private void uusiLukuTB_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -32,6 +32,7 @@ namespace _5._Harjoitus___koodi_ja_video
                     }
                     vastausTB.Visible = true;
                 }
+                
 
             }
             else
@@ -45,7 +46,7 @@ namespace _5._Harjoitus___koodi_ja_video
             {
                         TyhjaaLomake();
             }
-
+            
             
         }
         
