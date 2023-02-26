@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{1BE3498C-E802-42B4-BD41-4F97C3BA76B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1", "WinFormsApp1\H1.csproj", "{1BE3498C-E802-42B4-BD41-4F97C3BA76B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp2", "WinFormsApp2\WinFormsApp2.csproj", "{E6695BDD-626C-4C03-B732-299D295DC3F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2", "WinFormsApp2\H2.csproj", "{E6695BDD-626C-4C03-B732-299D295DC3F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
