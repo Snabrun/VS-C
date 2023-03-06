@@ -51,19 +51,19 @@ namespace Oppilashallintajarjestelma
 
         public bool muokkaaOpiskelijaa(int oid, String enimi, String snimi, String puh, String email, int onro)
         {
-            MySqlCommand kommento = new MySqlCommand();
+            MySqlCommand komento = new MySqlCommand();
             String paivityskysely = "UPDATE `yhteystiedot` SET `Etunimi` = @enm," + "`Sukunimi` = @snm, `puhelin` = @puh, `sahkoposti` = @eml, `opiskelijanumero` = @ono" + " WHERE oid = @oid";
-            kommento.CommandText= paivityskysely;
-            kommento.Connection = yhteys.otaYhteys();
-            kommento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
-            kommento.Parameters.Add("@snm", MySqlDbType.VarChar).Value=snimi;
-            kommento.Parameters.Add("@puh", MySqlDbType.VarChar).Value=puh;
-            kommento.Parameters.Add("@eml", MySqlDbType.VarChar).Value = email;
-            kommento.Parameters.Add("@ono", MySqlDbType.UInt32).Value = onro;
-            kommento.Parameters.Add("@oid", MySqlDbType.UInt32).Value = oid;
+            komento.CommandText= paivityskysely;
+            komento.Connection = yhteys.otaYhteys();
+            komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
+            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value=snimi;
+            komento.Parameters.Add("@puh", MySqlDbType.VarChar).Value=puh;
+            komento.Parameters.Add("@eml", MySqlDbType.VarChar).Value = email;
+            komento.Parameters.Add("@ono", MySqlDbType.UInt32).Value = onro;
+            komento.Parameters.Add("@oid", MySqlDbType.UInt32).Value = oid;
 
             yhteys.avaaYhteys();
-            if(kommento.ExecuteNonQuery() == 1)
+            if(komento.ExecuteNonQuery() == 1)
             {
                 yhteys.suljeYhteys();
                 return true;
