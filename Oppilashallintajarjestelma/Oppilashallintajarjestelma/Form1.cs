@@ -103,7 +103,7 @@ namespace Oppilashallintajarjestelma
 
         private void poistaBT_Click(object sender, EventArgs e)
         {
-            int ktunnus = Int32.Parse(idTB.Text);
+            String ktunnus = idTB.Text;
             if (opiskelija.poistaOpiskelija(ktunnus))
             {
                 tietotauluDG.DataSource = opiskelija.haeOpiskelijat();

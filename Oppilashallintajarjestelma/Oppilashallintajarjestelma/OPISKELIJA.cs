@@ -15,7 +15,7 @@ namespace Oppilashallintajarjestelma
         public bool lisaaOpiskelija(String enimi, String snimi, String puh, String email, int onro)
         {
             MySqlCommand kommento= new MySqlCommand();
-            String lisayskysely = "INSERT INTO yhteystiedot " + "(etunimi, sukunimi, puhelin, sahkoposti, opiskelijanumero) " + "VALUES (@enm, @snm, @puh, @eml, @ono); ";
+            String lisayskysely = "INSERT INTO yhteystiedot " + "(etunimi, sukunimi, puhelin, sähköposti, opiskelijanumero) " + "VALUES (@enm, @snm, @puh, @eml, @ono); ";
             kommento.CommandText = lisayskysely;
             kommento.Connection = yhteys.otaYhteys();
             kommento.Parameters.Add("@enm", MySqlDbType.VarChar).Value= enimi;
@@ -39,7 +39,7 @@ namespace Oppilashallintajarjestelma
 
         public DataTable haeOpiskelijat()
         {
-            MySqlCommand kommento = new MySqlCommand("SELECT oid, etunimi, sukunimi, puhelin, sahkoposti, opiskelijanumero FROM yhteystiedot", yhteys.otaYhteys());
+            MySqlCommand kommento = new MySqlCommand("SELECT oid, etunimi, sukunimi, puhelin, sähköposti, opiskelijanumero FROM yhteystiedot", yhteys.otaYhteys());
             MySqlDataAdapter adapteri = new MySqlDataAdapter();
             DataTable taulu = new DataTable();
 
@@ -52,7 +52,7 @@ namespace Oppilashallintajarjestelma
         public bool muokkaaOpiskelijaa(int oid, String enimi, String snimi, String puh, String email, int onro)
         {
             MySqlCommand komento = new MySqlCommand();
-            String paivityskysely = "UPDATE `yhteystiedot` SET `Etunimi` = @enm," + "`Sukunimi` = @snm, `puhelin` = @puh, `sahkoposti` = @eml, `opiskelijanumero` = @ono" + " WHERE oid = @oid";
+            String paivityskysely = "UPDATE `yhteystiedot` SET `Etunimi` = @enm," + "`Sukunimi` = @snm, `puhelin` = @puh, `sähköposti` = @eml, `opiskelijanumero` = @ono" + " WHERE oid = @oid";
             komento.CommandText= paivityskysely;
             komento.Connection = yhteys.otaYhteys();
             komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
