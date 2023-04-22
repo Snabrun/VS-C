@@ -28,7 +28,12 @@ namespace Oppilashallintajarjestelma
             idTB.Text = tietotauluDG.CurrentRow.Cells[0].Value.ToString();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private DataGridView GetTietotauluDG()
+        {
+            return tietotauluDG;
+        }
+
+        private void Form1_Load(object sender, EventArgs e, DataGridView tietotauluDG)
         {
             tietotauluDG.DataSource = opiskelija.haeOpiskelijat();
         }
