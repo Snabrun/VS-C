@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.salasanaPanel = new System.Windows.Forms.Panel();
-            this.salasanaOikeinP = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.virheviestiLB = new System.Windows.Forms.Label();
             this.tarkistaBT = new System.Windows.Forms.Button();
             this.salasanaTB = new System.Windows.Forms.TextBox();
             this.kauttajaTB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.salasanaOikeinP = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.salasanaPanel.SuspendLayout();
             this.salasanaOikeinP.SuspendLayout();
             this.SuspendLayout();
@@ -58,29 +58,6 @@
             this.salasanaPanel.Size = new System.Drawing.Size(531, 218);
             this.salasanaPanel.TabIndex = 0;
             this.salasanaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.salasanaPanel_Paint);
-            // 
-            // salasanaOikeinP
-            // 
-            this.salasanaOikeinP.BackColor = System.Drawing.Color.Maroon;
-            this.salasanaOikeinP.Controls.Add(this.label3);
-            this.salasanaOikeinP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.salasanaOikeinP.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.salasanaOikeinP.ForeColor = System.Drawing.Color.Snow;
-            this.salasanaOikeinP.Location = new System.Drawing.Point(0, 0);
-            this.salasanaOikeinP.Name = "salasanaOikeinP";
-            this.salasanaOikeinP.Size = new System.Drawing.Size(531, 218);
-            this.salasanaOikeinP.TabIndex = 1;
-            this.salasanaOikeinP.Visible = false;
-            this.salasanaOikeinP.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(428, 65);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tervetuloa sivulleni";
             // 
             // virheviestiLB
             // 
@@ -135,6 +112,30 @@
             this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Käyttäjätunnus";
+            // 
+            // salasanaOikeinP
+            // 
+            this.salasanaOikeinP.BackColor = System.Drawing.Color.Maroon;
+            this.salasanaOikeinP.Controls.Add(this.label3);
+            this.salasanaOikeinP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.salasanaOikeinP.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.salasanaOikeinP.ForeColor = System.Drawing.Color.Snow;
+            this.salasanaOikeinP.Location = new System.Drawing.Point(0, 0);
+            this.salasanaOikeinP.Name = "salasanaOikeinP";
+            this.salasanaOikeinP.Size = new System.Drawing.Size(531, 218);
+            this.salasanaOikeinP.TabIndex = 1;
+            this.salasanaOikeinP.Visible = false;
+            this.salasanaOikeinP.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(428, 65);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tervetuloa sivulleni";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
