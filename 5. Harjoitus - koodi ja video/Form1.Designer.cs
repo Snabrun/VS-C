@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.uusiLukuTB = new System.Windows.Forms.TextBox();
-            this.vastausTB = new System.Windows.Forms.Label();
+            this.vastausLB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,22 +53,22 @@
             this.uusiLukuTB.TextChanged += new System.EventHandler(this.uusiLukuTB_TextChanged);
             this.uusiLukuTB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.uusiLukuTB_KeyPress);
             // 
-            // vastausTB
+            // vastausLB
             // 
-            this.vastausTB.AutoSize = true;
-            this.vastausTB.Location = new System.Drawing.Point(21, 124);
-            this.vastausTB.Name = "vastausTB";
-            this.vastausTB.Size = new System.Drawing.Size(38, 15);
-            this.vastausTB.TabIndex = 2;
-            this.vastausTB.Text = "label2";
-            this.vastausTB.Visible = false;
+            this.vastausLB.AutoSize = true;
+            this.vastausLB.Location = new System.Drawing.Point(21, 124);
+            this.vastausLB.Name = "vastausLB";
+            this.vastausLB.Size = new System.Drawing.Size(38, 15);
+            this.vastausLB.TabIndex = 2;
+            this.vastausLB.Text = "label2";
+            this.vastausLB.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 169);
-            this.Controls.Add(this.vastausTB);
+            this.Controls.Add(this.vastausLB);
             this.Controls.Add(this.uusiLukuTB);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -83,6 +83,6 @@
 
         private Label label1;
         private TextBox uusiLukuTB;
-        private Label vastausTB;
+        private Label vastausLB;
     }
 }
